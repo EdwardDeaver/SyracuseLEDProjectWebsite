@@ -84,15 +84,13 @@
 </head>
 <body>
     <script src="sketch.js"></script>
-
-<script>
-  var socket = io('ws://nodejsexpresswebsocket.glitch.me');
+ <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"> </script>
+    <script>
+    var socket = io('https://syracuseledprojectmiddleware.glitch.me');
   socket.on('connect', function(){});
-  socket.on('event', function(data){
-    console.log(data);
-  });
+  socket.on('event', function(data){});
   socket.on('disconnect', function(){});
-</script>
+    </script>
 <div class="container-fluid">
 <div class="row">
   <div class="col"></div>
